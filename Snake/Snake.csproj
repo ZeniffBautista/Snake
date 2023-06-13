@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\body.png" />
+    <None Remove="Assets\booty.png" />
+    <None Remove="Assets\deadbody.png" />
+    <None Remove="Assets\deadhead.png" />
+    <None Remove="Assets\empty.png" />
+    <None Remove="Assets\Fondo.gif" />
+    <None Remove="Assets\food.png" />
+    <None Remove="Assets\grape.png" />
+    <None Remove="Assets\head.png" />
+    <None Remove="Assets\icon.png" />
+    <None Remove="Assets\orange.png" />
+    <None Remove="Assets\Uva.png" />
+    <None Remove="Assets\uvas.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\body.png" />
+    <Resource Include="Assets\booty.png" />
+    <Resource Include="Assets\deadbody.png" />
+    <Resource Include="Assets\deadhead.png" />
+    <Resource Include="Assets\empty.png" />
+    <Resource Include="Assets\Fondo.gif" />
+    <Resource Include="Assets\food.png" />
+    <Resource Include="Assets\grape.png" />
+    <Resource Include="Assets\head.png" />
+    <Resource Include="Assets\icon.png" />
+    <Resource Include="Assets\orange.png" />
+    <Resource Include="Assets\Uva.png" />
+    <Resource Include="Assets\uvas.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
